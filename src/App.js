@@ -1,13 +1,15 @@
 import './App.scss';
-import ItemListContainer from './components/itemListContainer';
-import NavBarPage from './components/navbar';
+import ItemDetailContainer from './components/itemDetailContainer';
+// import ItemListContainer from './components/itemListContainer';
+// import NavBarPage from './components/navbar';
 
 
 function App() {
   return (
     <>
-      <NavBarPage/>
-      <ItemListContainer/>
+      {/* <NavBarPage/> */}
+      {/* <ItemListContainer/> */}
+      <ItemDetailContainer/>
     </>
   );
 }
