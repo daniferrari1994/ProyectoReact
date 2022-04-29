@@ -41,7 +41,7 @@
         "productDetails":"Los bloques de construcción de la GPU más rápida y eficiente del mundo, la nueva Ampere SM ofrece el doble de rendimiento FP32 y una eficiencia energética mejorada. Experimenta el doble de rendimiento que los RT cores de 1a generación, además de RT y sombreado simultáneos para un nivel completamente nuevo de rendimiento en ray tracing."
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "B560M-PLUS WiFi",
         "brandname": "asustuf",
         "category": "Motherboard",
@@ -51,7 +51,7 @@
         "productDetails":"Tarjeta madre Intel® B560 (LGA 1200) mATX con PCIe 4.0, dos ranuras M.2, 8 + 1 fases de poder, Realtek 2.5Gb Ethernet, Intel® Wi-Fi 6, DisplayPort 1.4, HDMI 2.0, USB 3.2 Gen 2, USB 3.2 Gen 1 Type-C®, compatibilidad con Thunderbolt™ 4, iluminación Aura Sync RGB y RGB direccionable"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "LC 240 RGB",
         "brandname": "asustuf",
         "category": "CoolerCPU",
@@ -61,7 +61,7 @@
         "productDetails":"Enfriamiento líquido de CPU todo en uno TUF Gaming LC 240 RGB con Aura Sync y ventiladores de radiador TUF 120mm RGB"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "VG27AQ 27'",
         "brandname": "asustuf",
         "category": "Monitor",
@@ -71,7 +71,7 @@
         "productDetails":"Monitor de juegos TUF Gaming VG27AQ HDR: 27 pulgadas WQHD (2560x1440), IPS, 165Hz, Extreme Low Motion Blur Sync Compatible con G-SYNC, Adaptive-Sync, 1ms (MPRT), HDR10"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "LC 120 RGB",
         "brandname": "asustuf",
         "category": "CoolerCPU",
@@ -81,7 +81,7 @@
         "productDetails":"Enfriamiento líquido de CPU todo en uno TUF Gaming LC 120 RGB con Aura Sync y ventilador de radiador TUF 120mm RGB"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "GeForce® GTX 1660 Ti",
         "brandname": "asustuf",
         "category": "Placa de video",
