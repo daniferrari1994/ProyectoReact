@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import ItemDetail from '../itemDetail'
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import ItemDetail from '../ItemDetail';
 
 const ItemDetailContainer = () => {
+    const [product, setProduct] = useState({});
+    const { id } = useParams();
 
-    const [personaje, setPersonaje] = useState({})
-
-    useEffect(()=> {
-
-        ( async ()=> {
+    useEffect(() => {
+        (async () => {
+            const promesa = new Promise((acc, rej) => {
+                const response = fetch('/data.json');
+                setTimeout(() => {
+                    acc(response);
+                })
+            })
             try {
-                const response = await fetch('https://pokeapi.co/api/v2/pokemon/1');
-                console.log(response);
-                const data = await response.json();
-                console.log(data);
-                setPersonaje(data);
+                const respuesta = await promesa;
+                const data = await respuesta.json();
+                const products = data.products;
+                const foundProduct = products.filter(prod => prod.id === parseInt(id));
+                setProduct(foundProduct[0]);
             } catch (error) {
                 console.log(error);
             }
         })()
-
-    }, [])
-
-    console.log(personaje);
+    }, [id])
 
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        }}>
-            <ItemDetail personaje={personaje}/>
-        </div>
+        <>
+            <ItemDetail product={product} />
+        </>
     )
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

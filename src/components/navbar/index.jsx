@@ -2,13 +2,16 @@ import React from 'react';
 import './styles.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom';
 
 const NavBarPage = () => {
     return (
         <>
             <nav className='navbar navbar-light bg-light fixed-top'>
                 <div className='container-fluid'>
-                    <a className='navbar-brand' href="http://localhost:3000/">Logo Pagina</a>
+                    <Link className='navbar-brand' to={"/"}>Logo Pagina</Link>
+                    <h4><Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link></h4>
+                    <h4><Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link></h4>
                     <button className='navbar-toggler' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <FontAwesomeIcon icon={faCartShopping}/>
                     </button>

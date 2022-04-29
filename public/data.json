@@ -2,37 +2,92 @@
     "products":[
     {
         "id": 1,
-        "title": "The Song of Achilles",
-        "price": 2500,
-        "pictureUrl": "../../assets/book-example.jpg",
-        "stock": 8
+        "name": "MAXIMUS Z690 EXTREME GLACIAL",
+        "brandname": "asusrogstrix",
+        "category": "Motherboard",
+        "price": 295040.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31115_Mother_ASUS_ROG_MAXIMUS_Z690_EXTREME_GLACIAL_2262241c-grn.jpg",
+        "stock": 8,
+        "productDetails":"Tarjeta madre Intel® Z690 EATX con 24 + 1 fases de poder, Ultrablock DDR5 EK® integrado, DDR5 con OptiMem III, cinco M.2, puerto de panel frontal USB 3.2 Gen 2x2 con soporte Quick Charge 4+, Dual Thunderbolt™ 4, PCIe® 5.0, Wi-Fi 6E integrado e iluminación Aura Sync RGB."
     },
     {
         "id": 2,
-        "title": "The Song of Achilles",
-        "price": 4500,
-        "pictureUrl": "../../assets/book-example.jpg",
-        "stock": 8
+        "name": "MAXIMUS Z690 APEX",
+        "brandname": "asusrogstrix",
+        "category": "Motherboard",
+        "price": 104540.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31120_Mother_ASUS_ROG_MAXIMUS_Z690_APEX_ba5b4ffa-grn.jpg",
+        "stock": 5,
+        "productDetails":"Tarjeta madre Intel® Z690 ATX con 24 + 0 fases de poder, DDR5 con OptiMem III, cinco M.2, puerto de panel frontal USB 3.2 Gen 2x2 con Quick Charge 4+, PCIe® 5.0, Wi-Fi 6E integrado e iluminación Aura Sync RGB."
     },
     {
         "id": 3,
-        "title": "The Song of Achilles",
-        "price": 2000,
-        "pictureUrl": "../../assets/book-example.jpg",
-        "stock": 8
+        "name": "LC 240 RGB",
+        "brandname": "asusrogstrix",
+        "category": "CoolerCPU",
+        "price": 39270.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25774_Cooler_CPU_ASUS_ROG_STRIX_LC_240_RGB_2ec817e3-grn.jpg",
+        "stock": 12,
+        "productDetails":"ROG Strix LC 240: Sistema de refrigeración líquida AiO con Aura Sync y dos ventiladores RGB direccionables ROG de 120mm"
     },
     {
         "id": 4,
-        "title": "The Song of Achilles",
-        "price": 1500,
-        "pictureUrl": "../../assets/book-example.jpg",
-        "stock": 8
+        "name": "GeForce RTX 3090 White",
+        "brandname": "asusrogstrix",
+        "category": "PlacaDeVideo",
+        "price": 503500.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_28810_Placa_de_Video_ASUS_GeForce_RTX_3090_24GB_GDDR6X_ROG_STRIX_GAMING_White_4bcd67be-grn.jpg",
+        "stock": 3,
+        "productDetails":"Los bloques de construcción de la GPU más rápida y eficiente del mundo, la nueva Ampere SM ofrece el doble de rendimiento FP32 y una eficiencia energética mejorada. Experimenta el doble de rendimiento que los RT cores de 1a generación, además de RT y sombreado simultáneos para un nivel completamente nuevo de rendimiento en ray tracing."
+    },
+    {
+        "id": 4,
+        "name": "B560M-PLUS WiFi",
+        "brandname": "asustuf",
+        "category": "Motherboard",
+        "price": 23000.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27543_Mother_ASUS_TUF_GAMING_B560M-PLUS_WiFi_Intel_11th_Gen_Socket_1200_a868472c-grn.jpg",
+        "stock": 5,
+        "productDetails":"Tarjeta madre Intel® B560 (LGA 1200) mATX con PCIe 4.0, dos ranuras M.2, 8 + 1 fases de poder, Realtek 2.5Gb Ethernet, Intel® Wi-Fi 6, DisplayPort 1.4, HDMI 2.0, USB 3.2 Gen 2, USB 3.2 Gen 1 Type-C®, compatibilidad con Thunderbolt™ 4, iluminación Aura Sync RGB y RGB direccionable"
     },
     {
         "id": 5,
-        "title": "The Song of Achilles",
-        "price": 3400,
-        "pictureUrl": "../../assets/book-example.jpg",
-        "stock": 8
+        "name": "LC 240 RGB",
+        "brandname": "asustuf",
+        "category": "CoolerCPU",
+        "price": 26540.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22696_Cooler_CPU_ASUS_TUF_LC_240_RGB_d960ff66-grn.jpg",
+        "stock": 4,
+        "productDetails":"Enfriamiento líquido de CPU todo en uno TUF Gaming LC 240 RGB con Aura Sync y ventiladores de radiador TUF 120mm RGB"
+    },
+    {
+        "id": 6,
+        "name": "VG27AQ 27'",
+        "brandname": "asustuf",
+        "category": "Monitor",
+        "price": 104870.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_20878_Monitor_Gamer_ASUS_27__TUF_VG27AQ_165Hz_1ms_IPS_WQHD_2K_cf64c7db-grn.jpg",
+        "stock": 4,
+        "productDetails":"Monitor de juegos TUF Gaming VG27AQ HDR: 27 pulgadas WQHD (2560x1440), IPS, 165Hz, Extreme Low Motion Blur Sync Compatible con G-SYNC, Adaptive-Sync, 1ms (MPRT), HDR10"
+    },
+    {
+        "id": 7,
+        "name": "LC 120 RGB",
+        "brandname": "asustuf",
+        "category": "CoolerCPU",
+        "price": 22460.00,
+        "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_25781_Cooler_CPU_ASUS_TUF_LC_120_RGB_43a41c49-grn.jpg",
+        "stock": 6,
+        "productDetails":"Enfriamiento líquido de CPU todo en uno TUF Gaming LC 120 RGB con Aura Sync y ventilador de radiador TUF 120mm RGB"
+    },
+    {
+        "id": 8,
+        "name": "GeForce® GTX 1660 Ti",
+        "brandname": "asustuf",
+        "category": "Placa de video",
+        "price": 107999.99,
+        "image": "https://dlcdnwebimgs.asus.com/gain/d0cf6446-cb16-42df-b03e-302102040f17/w800/fwebp",
+        "stock": 7,
+        "productDetails":"ASUS TUF Gaming GeForce® GTX 1660 Ti EVO OC Edition 6GB GDDR6 tiene altas frecuencias de actualización para una ventaja de FPS sin esfuerzo"
     }
 ]}
