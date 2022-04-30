@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons"
+import CartContainer from '../CartContainer';
 import { Link } from 'react-router-dom';
 
 const NavBarPage = () => {
@@ -27,6 +28,9 @@ const NavBarPage = () => {
                                     <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
                                 </li>
                             </ul>
+                            <div>
+                                <CartContainer/>
+                            </div>
                         </div>
                     </div>
                 </div>

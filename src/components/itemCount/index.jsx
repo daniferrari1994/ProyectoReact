@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import './syles.scss';
 
-const ItemCount = ({ valorStock }) => {
+const ItemCount = ({ valorStock, onAdd }) => {
     const [quantity, setQuantity] = useState(1);
-    const [stock, setStock] = useState(valorStock);
+    const [stock] = useState(valorStock);
     const [disableMinus, setDisableMinus] = useState(true);
     const [disablePlus, setDisablePlus] = useState(false);
 
@@ -25,16 +25,16 @@ const ItemCount = ({ valorStock }) => {
         }
     }
 
-    const addToCart = () => {
-        if (quantity <= stock) {
-            swal("Agregado!", "Se agregaron correctamente los productos", "success");;
-            setStock(stock - quantity);
-            setQuantity(1);
-        } else {
-            alert("No hay stock disponible para agregar los productos al carrito");
-            setQuantity(1);
-        }
-    }
+    // const addToCart = () => {
+    //     if (quantity <= stock) {
+    //         swal("Agregado!", "Se agregaron correctamente los productos", "success");;
+    //         setStock(stock - quantity);
+    //         setQuantity(1);
+    //     } else {
+    //         alert("No hay stock disponible para agregar los productos al carrito");
+    //         setQuantity(1);
+    //     }
+    // }
 
     return (
         <>
@@ -44,7 +44,7 @@ const ItemCount = ({ valorStock }) => {
                     <span className="itemQuantity">{quantity}</span>
                     <button className="btn btn-danger btn-sm" disabled={disablePlus} onClick={addItem}>+</button>
                 </div>
-                <button className="btn btn-outline-success" onClick={addToCart}>Add to cart</button>
+                <button className="btn btn-outline-success" onClick={() => onAdd(quantity)}>Add to cart</button>
             </div>
         </>
     )
