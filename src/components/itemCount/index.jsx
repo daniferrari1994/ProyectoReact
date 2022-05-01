@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import swal from 'sweetalert';
-import './syles.scss';
 
 const ItemCount = ({ valorStock, onAdd }) => {
     const [quantity, setQuantity] = useState(1);
@@ -30,7 +28,7 @@ const ItemCount = ({ valorStock, onAdd }) => {
             <div className="d-grid gap-2 col-6 mx-auto">
                 <div className="d-md-flex justify-content-md-center">
                     <button className="btn btn-primary btn-sm" disabled={disableMinus} onClick={removeItem}>-</button>
-                    <span className="itemQuantity">{quantity}</span>
+                    <span>{quantity}</span>
                     <button className="btn btn-danger btn-sm" disabled={disablePlus} onClick={addItem}>+</button>
                 </div>
                 <button className="btn btn-outline-success" onClick={() => onAdd(quantity)}>Add to cart</button>

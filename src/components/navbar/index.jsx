@@ -11,6 +11,8 @@ const NavBarPage = () => {
             <nav className='navbar navbar-light bg-light fixed-top'>
                 <div className='container-fluid'>
                     <Link className='navbar-brand' to={"/"}>Logo Pagina</Link>
+                    <Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link>
+                    <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
                     <button className='navbar-toggler' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <FontAwesomeIcon icon={faCartShopping}/>
                     </button>
@@ -20,14 +22,6 @@ const NavBarPage = () => {
                             <button type="button" className='btn-close text-reset' data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div className='offcanvas-body'>
-                            <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
-                                <li className='nav-item'>
-                                    <Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link>
-                                </li>
-                                <li className='nav-item'>
-                                    <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
-                                </li>
-                            </ul>
                             <div>
                                 <CartContainer/>
                             </div>

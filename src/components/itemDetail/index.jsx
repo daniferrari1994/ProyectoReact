@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
-// import { Link } from 'react-router-dom';
-import swal from 'sweetalert'
+import { Link } from 'react-router-dom';
 import { Cart } from '../../context/CartProvider';
 import ItemCount from '../ItemCount';
 import './styles.scss';
@@ -14,11 +13,7 @@ const ItemDetail = ({ product }) => {
     const onAdd = (quantity) => {
         setQuantity(quantity);
         setButtonFlag(true);
-    }
-
-    const onFinishPurchase = () => {
         addToCart(product, quantity);
-        swal("Compra realizada", "Muchas gracias por comprar con nosotros!", "success");
     }
 
     return (
@@ -32,7 +27,7 @@ const ItemDetail = ({ product }) => {
                         <h5 className="card-title">{product.name}</h5>
                         <p className='card-text'>{product.productDetails}</p>
                         <p className="card-text"><small className="text-muted">${product.price}</small></p>
-                        {(buttonFlag ? <button className='btn btn-dark' onClick={() => onFinishPurchase()} >Finalizar compra</button> : <ItemCount onAdd={onAdd} valorStock={20} />)}
+                        {(buttonFlag ? <Link to={"/cart"}><button className='btn btn-dark'>Go to cart</button></Link> : <ItemCount onAdd={onAdd} valorStock={product.stock}/>)}
                     </div>
                 </div>
             </div>
