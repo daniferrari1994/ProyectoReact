@@ -25,17 +25,6 @@ const ItemCount = ({ valorStock, onAdd }) => {
         }
     }
 
-    // const addToCart = () => {
-    //     if (quantity <= stock) {
-    //         swal("Agregado!", "Se agregaron correctamente los productos", "success");;
-    //         setStock(stock - quantity);
-    //         setQuantity(1);
-    //     } else {
-    //         alert("No hay stock disponible para agregar los productos al carrito");
-    //         setQuantity(1);
-    //     }
-    // }
-
     return (
         <>
             <div className="d-grid gap-2 col-6 mx-auto">
