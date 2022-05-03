@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons"
 import CartContainer from '../CartContainer';
 import { Link } from 'react-router-dom';
+import Logo from './../../assets/Asus-Logo.png';
 
 const NavBarPage = () => {
     const { cartQuantity } = useContext(Cart);
@@ -14,7 +15,8 @@ const NavBarPage = () => {
         <>
             <nav className='navbar navbar-light bg-light fixed-top'>
                 <div className='container-fluid'>
-                    <Link className='navbar-brand' to={"/"}>Logo Pagina</Link>
+                    <img src={Logo} alt="Logo" className='logoPagina'/>
+                    <Link className='navbar-brand' to={"/"}>Inicio</Link>
                     <Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link>
                     <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
                     <button className='navbar-toggler position-relative' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
