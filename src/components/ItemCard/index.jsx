@@ -16,7 +16,7 @@ const ItemCard = ({product}) => {
     }
 
     return (
-        <div className='card' style={{width: '18rem',}} id={product.id}>
+        <div className='card itemCard' style={{width: '18rem', margin: '30px'}} id={product.id}>
             <img src={product.image} alt="Producto" className='card-img-top'/>
             <div className='card-body'>
                 <h5 className='card-title'><Link to={`/item/${product.id}`}>{product.name}</Link></h5>

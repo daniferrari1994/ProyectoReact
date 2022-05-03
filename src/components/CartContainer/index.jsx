@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Cart } from '../../context/CartProvider';
 import CartItem from '../CartItem';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import CheckoutModal from '../CheckoutModal';
 
 const CartContainer = () => {
@@ -15,7 +15,7 @@ const CartContainer = () => {
 
   const showModal = () => {
     setModal(true);
-    swal("Compra realizada", "Muchas gracias por comprar en nuestra tienda!", "success");
+    // swal("Compra realizada", "Muchas gracias por comprar en nuestra tienda!", "success");
   }
 
   const hideModal = () => {

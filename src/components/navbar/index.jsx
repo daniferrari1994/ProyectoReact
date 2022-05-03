@@ -17,9 +17,8 @@ const NavBarPage = () => {
                     <Link className='navbar-brand' to={"/"}>Logo Pagina</Link>
                     <Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link>
                     <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
-                    { cartQuantity ? <CartWidget/> : null }
-                    <button className='navbar-toggler' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <FontAwesomeIcon icon={faCartShopping}/>
+                    <button className='navbar-toggler position-relative' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        { cartQuantity ? <CartWidget/> : <FontAwesomeIcon icon={faCartShopping}/>}  
                     </button>
                     <div className='offcanvas offcanvas-end' tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className='offcanvas-header'>
