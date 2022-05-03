@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles.scss';
+import CartWidget from '../CartWidget';
+import { Cart } from '../../context/CartProvider';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons"
 import CartContainer from '../CartContainer';
 import { Link } from 'react-router-dom';
 
 const NavBarPage = () => {
+    const { cartQuantity } = useContext(Cart);
+
     return (
         <>
             <nav className='navbar navbar-light bg-light fixed-top'>
@@ -13,6 +17,7 @@ const NavBarPage = () => {
                     <Link className='navbar-brand' to={"/"}>Logo Pagina</Link>
                     <Link className='navbar-brand' to={"/brandname/asustuf"}>Asus Tuf</Link>
                     <Link className='navbar-brand' to={"/brandname/asusrogstrix"}>Asus Rog</Link>
+                    { cartQuantity ? <CartWidget/> : null }
                     <button className='navbar-toggler' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <FontAwesomeIcon icon={faCartShopping}/>
                     </button>

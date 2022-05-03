@@ -25,9 +25,12 @@ const CartContainer = () => {
   return (
     <div>
       {cart.map(prod => <CartItem product={prod} key={prod.id} />)}
-      <h3 className=''>Total: ${total}</h3>
-      { total > 0 ? <button onClick={showModal} className='btn btn-dark'>Finalizar Compra</button> : null }
-      {modal && <CheckoutModal hideModal={hideModal} cart={cart} total={total}/>}
+      <h3 className='card-title'>Total: ${total}</h3>
+      {total > 0 ?
+        <button onClick={showModal} className='btn btn-dark'>Finalizar Compra</button>
+        :
+        null}
+      {modal && <CheckoutModal hideModal={hideModal} cart={cart} total={total} />}
     </div>
   )
 }
